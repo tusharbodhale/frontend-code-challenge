@@ -11,6 +11,7 @@
 ##How to run application?
 * Clone this repository
 * Install node js and git bash
+* Make sure you added browser extension CORS -to make cross domain ajax request
 * Open command prompt or git bash
 * change directory to demo folder
 * To install all the dependencies in demo folder use command > npm install
