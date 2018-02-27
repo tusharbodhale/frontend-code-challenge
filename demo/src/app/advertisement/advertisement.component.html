@@ -6,12 +6,13 @@
 	<div class="card-info"> 
 		<p>{{advertisement.title}}</p>
 		<p class="distance-info">{{advertisement.realestateSummary.address.fullAddress}}</p>		
+		<div class="cost-info">
+			<p class="price">{{advertisement.advertisementPrice.baseRent | currency:'EUR':true}}</p>
+			<p class="value">
+				<span>{{advertisement.realestateSummary.numberOfRooms}} Zimmer</span>
+				<span>ab {{advertisement.realestateSummary.space | number:'1.0-0'}} m<sup>2</sup></span>
+			</p>
+		</div>
 	</div>
-	<div class="cost-info">
-		<p class="price">{{advertisement.advertisementPrice.baseRent | currency:'EUR':true}}</p>
-		<p class="value">
-			<span>{{advertisement.realestateSummary.numberOfRooms}} Zimmer</span>
-			<span>ab {{advertisement.realestateSummary.space | number:'1.0-0'}} m<sup>2</sup></span>
-		</p>
-	</div>
+	
 <!-- </div> -->
